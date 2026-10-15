@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Damjan | Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header class="navbar">
+        <a href="#home" class="logo">Damjan</a>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <p class="hero-small">Hi, I'm</p>
+            <h1>Damjan</h1>
+            <h2>Web Developer</h2>
+            <p class="hero-text">
+                I build websites and web apps with HTML, CSS, JavaScript, TypeScript and Angular.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn">View my projects</a>
+                <a href="#contact" class="btn btn-outline">Contact me</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About me</h2>
+
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        Hi, I'm Damjan, a <span class="age"></span>-year-old developer who loves turning ideas
+                        into working websites and apps. I am learning full-stack web development: I started
+                        with HTML and CSS, added JavaScript for interactivity and now build single-page
+                        applications with Angular and TypeScript.
+                    </p>
+                    <p>
+                        What I enjoy most is the moment when a project that started as an empty file finally
+                        comes to life: buttons react, data appears and the layout adapts to every screen size.
+                        I like clean, readable code and I always click through every feature before I call
+                        a project finished.
+                    </p>
+                    <p>
+                        Outside of coding I am a big football fan and an enthusiastic gamer. Both are my favourite
+                        ways to switch off, and both are about teamwork, strategy and quick decisions, which
+                        also helps when I debug code.
+                    </p>
+                    <p>
+                        On this page you can find my skills and three projects that show what I have learned so far.
+                    </p>
+                </div>
+
+                <div class="about-card">
+                    <h3>Quick facts</h3>
+                    <ul class="facts">
+                        <li><strong>Age:</strong> <span class="age"></span> years</li>
+                        <li><strong>Focus:</strong> Full-stack web development</li>
+                        <li><strong>Currently learning:</strong> Angular &amp; TypeScript</li>
+                    </ul>
+
+                    <h3>Interests</h3>
+                    <div class="badges">
+                        <span class="badge">Football</span>
+                        <span class="badge">Gaming</span>
+                        <span class="badge">Learning new tech</span>
+                    </div>
+
+                    <h3>Strengths</h3>
+                    <div class="badges">
+                        <span class="badge">Problem solving</span>
+                        <span class="badge">Curiosity</span>
+                        <span class="badge">Teamwork</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="alt">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div id="skills-container" class="skills-grid"></div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div id="projects-container" class="projects-grid"></div>
+        </div>
+    </section>
+
+    <section id="contact" class="alt">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <p>Interested in working together or have a question? Get in touch:</p>
+            <p class="contact-links">
+                <d>damjan.demic@gmx.at</d>
+                <a href="https://github.com/CodeWorkerVienna">GitHub</a>
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Damjan. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
