@@ -1,0 +1,242 @@
+/* General Settings */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 1.4rem;
+  background-image: linear-gradient(to bottom, black, grey, beige);
+}
+
+/* Start Header LOGO+2Links */
+
+header {
+  background-color: #f4f4f4;
+}
+.headcontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+.info-header {
+  display: flex;
+  justify-content: space-between;
+  width: 350px;
+}
+
+.info-header a {
+  color: grey;
+  text-decoration: none;
+}
+
+.info-header a:hover {
+  color: blue;
+}
+
+/* Start of the Navbar */
+
+.navbar {
+  background-color: rgb(59, 59, 59);
+  padding: 4rem;
+}
+.navlinks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  overflow: hidden;
+}
+.navlinks a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  min-width: 200px;
+}
+.navlinks a:hover {
+  color: blue;
+}
+
+/* Start of Footer */
+footer {
+  background-color: rgb(59, 59, 59);
+}
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-container a {
+  text-decoration: none;
+  padding: 20px;
+  color: white;
+}
+.forborder {
+  border-right: 2px solid white;
+}
+.footer-container a:hover {
+  color: blue;
+}
+
+/* Start of Gallery */
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 3rem;
+  padding: 2rem;
+  margin: 0 5rem;
+}
+.gallery-container img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  transition: transform 1s ease;
+}
+
+.gallery-container img:hover {
+  transform: scale(1.2);
+}
+
+.picture {
+  position: relative;
+  overflow: hidden;
+}
+
+.picture-description {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+  bottom: 0;
+  left: 0;
+  padding: 12px;
+  font-weight: bold;
+}
+
+/* Start of Media Query */
+
+@media (min-width: 768px) {
+  .gallery-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 992px) {
+  .gallery-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Styles for Featured Exhibition */
+
+.featuredcontainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  padding: 2rem;
+  margin: 3rem 5rem;
+}
+
+.featuredcontainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.featuredpictures {
+  position: relative;
+  overflow: hidden;
+  transition: transform 1s ease-in-out;
+}
+.infobox {
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  color: beige;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+}
+.featuredpictures:hover {
+  .infobox {
+    opacity: 1;
+  }
+  transform: scale(1.15);
+}
+
+/* Grid Layout */
+
+.featuredpictures1 {
+  grid-row: span 2;
+}
+.featuredpictures2 {
+  grid-column: span 2;
+}
+.featuredpictures3 {
+  grid-column: span 2;
+}
+.featuredpictures4 {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+.featuredpictures8 {
+  grid-column: span 2;
+}
+
+@media (max-width: 992px) {
+  .featuredcontainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .featuredcontainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* Styles About Page */
+h1 {
+  text-align: center;
+  padding: 1rem;
+  font-weight: bold;
+  font-size: 3rem;
+}
+h2 {
+  color: rgb(33, 33, 36);
+  padding: 1rem 0;
+  font-size: 2.2rem;
+}
+.herocontainer {
+  padding: 1rem;
+}
+
+.exhibition-info {
+  text-align: center;
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.exhibition-label {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.85rem;
+}
+
+.exhibition-info h1 {
+  font-size: 2.5rem;
+  margin: 8px 0;
+}
+
+.exhibition-artist {
+  font-style: italic;
+}
+
+.exhibition-dates {
+  font-weight: bold;
+  margin-bottom: 16px;
+}
